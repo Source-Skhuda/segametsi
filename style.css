@@ -32,8 +32,13 @@ z-index:1000;
 .logo{
 display:flex;
 align-items:center;
+gap:8px;
 font-weight:600;
-font-size:20px;
+}
+
+.logo span{
+font-size:14px;
+color:#6ea8ff;
 }
 
 .logo-img{
@@ -605,4 +610,102 @@ margin:auto;
 
 .map{
 margin-top:60px;
+
 }
+
+/* ================= MOBILE STABILITY FIX ================= */
+
+html, body{
+width:100%;
+max-width:100%;
+overflow-x:hidden;
+}
+
+/* Prevent elements from overflowing screen */
+
+img, svg, video{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+/* Fix sections spacing on small screens */
+
+section{
+width:100%;
+padding-left:20px;
+padding-right:20px;
+}
+
+/* Fix hero section */
+
+.hero{
+min-height:70vh;
+padding-top:120px;
+padding-bottom:80px;
+}
+
+.hero h1{
+line-height:1.2;
+word-break:break-word;
+}
+
+/* Fix navigation text overflow */
+
+.logo{
+flex-wrap:wrap;
+font-size:18px;
+}
+
+.logo span{
+display:block;
+font-size:14px;
+}
+
+/* Improve navbar spacing */
+
+.header{
+flex-wrap:wrap;
+gap:10px;
+}
+
+/* Improve cards stacking */
+
+.trust{
+flex-direction:column;
+}
+
+.trust-card{
+width:100%;
+}
+
+/* Fix calculator layout */
+
+.calculator{
+margin:20px;
+padding:40px 20px;
+}
+
+/* Improve contact form spacing */
+
+.contact form{
+padding:0 10px;
+}
+
+/* Footer mobile fix */
+
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.logo-img-footer{
+margin:auto;
+}
+
+/* Smooth text scaling */
+
+body{
+font-size:16px;
+}
+
